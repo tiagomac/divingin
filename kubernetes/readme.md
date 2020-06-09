@@ -64,6 +64,11 @@ Kubelet | Kube-proxy | Container Runtime
 ![node](images/node.png)
 ![node](images/node-details.png)
 
+# Kubernetes Networking Requirements
+In Kubernetes networking have some rules to follow
+![netrules](images/net-rules.png)
+![nodepodservice](images/node-pod-service.png)
+
 
 
 
