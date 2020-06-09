@@ -69,6 +69,44 @@ In Kubernetes networking have some rules to follow
 ![netrules](images/net-rules.png)
 ![nodepodservice](images/node-pod-service.png)
 
+# Installing and configuring kubernetes
+## Considerations
+### Where to install?
+* Cloud - IaaS (Virtual Machines); PaaS - Managed Service.
+* On-Prem - Bare Metal; Virtual Machines.
+### To Considerations (con't)
+* Cluster Networking
+* Scalability
+* High Availability
+* Disaster Recovery
+
+## Installation methods
+* Desktop
+* kubeadm
+* from scratch
+* Cloud scenarios
+
+## Installation requeriments
+System Requirements | Container Runtime | Networking
+--------------------|-------------------|-----------
+Linux - Ubuntu/CentOS | Container Runtime Interface (CRI) | Connectivity between all Nodes
+2 CPUs | Docker |
+2G Ram | |
+Swap Disabled ||
+
+## Cluster network ports
+Component | Ports (TCP) | Used By
+----------|-------------|---------
+API | 6443 | All
+etcd | 2379-2380 | API/etcd
+Scheduler |10251 | Self
+Controller Manager | 10252 | Self
+Kubelet | 10250 | Control Plane
+NodePort | 30000-32767 | All
+
+## Building your cluster
+![buildingcluster](images/buildingcluster.png)
+
 
 
 
